@@ -7,5 +7,6 @@ router.register(r'entradas', views.EntradaModelViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path(r'login/', views.FakeLogin.as_view())
 ]
